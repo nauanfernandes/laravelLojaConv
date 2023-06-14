@@ -1,0 +1,23 @@
+#Criar nova tabela
+    php artisan make:migration create_<tabela>_table
+
+    php artisan make:migration create_cidade_table
+
+#Executar o primeiro migrate (reconh laravel)
+    php artisan migrate
+
+#Verificar o status
+    php artisan migrate:status
+
+#DROPAR as tabelas e recriar
+php artisan migrate:fresh
+
+#Rollback
+php artisan migrate:rollback
+
+#Adicionar um campo a tabela já existente
+php artisan make:migration add_<nome campo>_to_<tabela>
+php artisan make:migration add_uf_to_cidade
+
+
+php artisan make:migration create_estados_table
